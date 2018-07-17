@@ -24,3 +24,21 @@ hs_err_pid*
 
 out
 .idea/
+
+# Intellij
+*.iml
+*/*.iml
+
+
+# Generated files
+*/bin/
+*/gen/
+*/out/
+*/.settings/
+*/.DS_Store
+.DS_Store
+*/.idea/
+.idea/
+gradlew
+gradlew.bat
+unused.txt
