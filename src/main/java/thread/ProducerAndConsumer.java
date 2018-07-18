@@ -24,7 +24,6 @@ class Consumer implements Runnable{
         this.size = size;
     }
 
-    @Override
     public void run() {
         while(true){
             try {
@@ -65,7 +64,6 @@ class Producer implements Runnable{
 
     }
 
-    @Override
     public void run() {
         for (int i = 0; i < 7; i++) {
             try {
