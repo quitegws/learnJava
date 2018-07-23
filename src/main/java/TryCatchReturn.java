@@ -1,17 +1,14 @@
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
 import java.util.LinkedHashMap;
-import java.util.TreeMap;
 
 /**
  * @Author: gws
  * @Date: 17/07/2018 21:00
  * @Description:
  */
-public class Main {
+public class TryCatchReturn {
     public static void main(String[] args) throws FileNotFoundException {
-        Main m = new Main();
+        TryCatchReturn m = new TryCatchReturn();
 //        PrintStream st = new PrintStream(new FileOutputStream("output.txt"));
 //
 //        System.setErr(st);
