@@ -3,6 +3,8 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * @Author: gws
@@ -31,5 +33,16 @@ public class TimeDateCalendar {
         DateTimeFormatter newFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
         LocalDate date2 = LocalDate.now();
         System.out.println(date2.format(newFormatter));
+
+        new Thread(()->{
+            log2("m1","m2");
+        }).start();
+
+    }
+
+    public static void log2(String msg1, String msg2){
+        synchronized(TimeDateCalendar.class){
+            System.out.println(msg1+msg2);
+        }
     }
 }
