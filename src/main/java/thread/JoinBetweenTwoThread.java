@@ -11,13 +11,12 @@ public class JoinBetweenTwoThread {
 
         t1.start();
 
-        while(t1.isAlive()){
-            t1.join();
-            System.out.println(Thread.currentThread().getName() + " is running");
-            Thread.sleep(1000);
-        }
-
+        t1.join();
+        System.out.println(Thread.currentThread().getName() + " is running");
+        Thread.sleep(1000);
     }
+
+
 
 }
 
@@ -41,3 +40,5 @@ class T1 extends Thread{
         }
     }
 }
+
+
